@@ -273,8 +273,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>I belong to You</h1>
-<p>Special present For someone i love the most.</p>
+<h1>let's make today a great one!</h1>
+<p>i made something that can make both of us happier. (๑¯◡¯๑)</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -306,7 +306,7 @@ pointer-events:none;
 <div id="options"></div>
 
 <div class="score-box">
-Points: <span id="score">0</span> / 3
+Points: <span id="score">0</span> / 5
 </div>
 
 <p id="feedback"></p>
@@ -315,7 +315,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Between Us in Paris</h1>
+<h1>The time we've spent together</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -369,7 +369,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '2505';
+const correctPin = '2606';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -417,9 +417,11 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did our story begin?", options:["January","May","March"],correct:1},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Game","Someone else","You"],correct:2}
+{q:"guess whose special day it is?", options:["you","me","both of us"],correct:1},
+{q:"do you feel happy today?", options:["must be yes","a little yeah","YEEEESSS I'M HAPPYYY"],correct:2},
+{q:"so, do you remember the first day we met?", options:["april","mei","juni"],correct:0},
+{q:"who do you think loves more?", options:["me","you","both of us"],correct:2},
+{q:"are you ready for all the happiness that's coming when we're together?", options:["yes, i'm excited for it.","yes, i'm really excited to be with you.","YES! i'm incredibly excited! i can't wait to be together (◍•ᴗ•◍)"],correct:2}
 ];
 
 let currentQ = 0;
@@ -484,7 +486,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2025-05-25T00:00:00");
+    const start = new Date("2026-03-15T00:00:00");
 
     setInterval(()=>{
 
@@ -519,7 +521,15 @@ function revealMemory(el){
     `;
 
     const text = `
-        I love you because you actually put effort into loving me. I love you because nobody has ever given me the love that you have given me and you are the only one that could ever love me this way. I love you because you always make me feel like I am worth something. I love you because you have a nurturing nature and you take care of me, especially on days that I need love the most. I love you because you make me smile when I have almost forgotten how to. I love you because you have a huge and honest heart. I love you and every little detail about you. I love you because you are simply you.
+        hello, love. the day i've been waiting for has finally arrived, at least for both of us. happy birthdaayy ya kakak, i hope this year brings you more happiness and many good things in life, whether they come from your family, your work, or the people closest to you esp me i'd love to make you happy (⁎˃ᴗ˂⁎) thank you for holding on and coming this far. you are truly an amazing woman, you always been an inspiration to me and to everyone who loves and cares about you. i hope you can learn to love yourself more and value yourself even more than i ever could. you are so precious, if only you could truly see it. you mean so much to me that i can't even imagine how i would get through a single day without you. thank you for always showing me your love and care ya kakakk. thank you for being the woman who has always given me so much and who has always made an effort for me, no matter what it was. i truly appreciate everything you've done for me. 
+        
+        today, on your birthday, i want to remind you that you are the most beautiful gift i could have ever received. i can't stop thinking about how grateful i am to have you in my life.
+        
+        and today, you deserve to be happy. i want to make you even happier than on any day before. can we celebrate your birthday together today? and not just today, but on all the days and celebrations that are yet to come.
+        
+        i hope you'll still want to stay by my side, so we can keep celebrating life's special moments together, just the two of us. aku harap kakak selalu sayang dan cinta sama dd, don't you think we should make countless memories together and celebrate every one of them along the way? YES AS WE SHOULD ⸜( •⌄• )⸝
+        
+        thankyou for being born into this world kakak, and thank you for choosing me all the time, i do love you 🩷💚   
     `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
